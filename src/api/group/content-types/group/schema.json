@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "Group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "group_members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group-member.group-member",
+      "mappedBy": "group"
+    },
+    "group_leader": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group-leader.group-leader"
+    },
+    "experiences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::experience.experience",
+      "private": true,
+      "mappedBy": "group"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experience_statuses",
+  "info": {
+    "singularName": "experience-status",
+    "pluralName": "experience-statuses",
+    "displayName": "Experience Status"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::experience.experience",
+      "mappedBy": "experience_status"
+    }
+  }
+}

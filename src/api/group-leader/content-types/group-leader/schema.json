@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "group_leaders",
+  "info": {
+    "singularName": "group-leader",
+    "pluralName": "group-leaders",
+    "displayName": "Group Leader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "harmony_tours_coordinators",
+  "info": {
+    "singularName": "harmony-tours-coordinator",
+    "pluralName": "harmony-tours-coordinators",
+    "displayName": "Harmony Tours Coordinator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

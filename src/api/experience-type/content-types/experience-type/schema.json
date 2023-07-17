@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experience_types",
+  "info": {
+    "singularName": "experience-type",
+    "pluralName": "experience-types",
+    "displayName": "Experience Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "experiences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::experience.experience",
+      "mappedBy": "experience_type"
+    }
+  }
+}
